@@ -1,0 +1,98 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  main {
+    position: relative;
+    flex: 1;
+    padding: 120px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    cursor: none;
+    pointer-events: none;
+
+    .intro1 {
+      position: absolute;
+      left: 15%;
+      top: 20%;
+      font-size: 90px;
+      text-align: left;
+
+      b {
+        background: linear-gradient(45deg, #da6ff2, #690580);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
+    }
+
+    .intro2 {
+      position: absolute;
+      right: 12%; 
+      top: 20%; 
+      font-size: 90px;
+      text-align: right;
+
+      b {
+        background: linear-gradient(45deg, #da6ff2, #690580);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
+    }
+
+    .sub-caption {
+      margin-top: 500px;
+      max-width: 80%;
+      text-align: center;
+      color: #da6ff2;
+      font-size: 18px;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: space-between; /* Spread the buttons */
+      width: 60%; /* Adjust the width to match the name width */
+      margin-top: 40px;
+      position: relative;
+    }
+
+    button {
+      padding: 15px 30px;
+      border-radius: 10px;
+      border: 1px solid #ffffff3f;
+      cursor: pointer;
+      pointer-events: auto;
+      background-color: #ffffff;
+      border: 1px solid #101010a1;
+      box-shadow: 0 16px 16px -12px #10101093;
+      font-family: Poppins;
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    span {
+      font-family: Poppins;
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    .button1 {
+      position: absolute;
+      left: 15%; /* Adjust to match letter 'A' */
+    }
+    
+    .button2 {
+      position: absolute;
+      left: 45%; /* Adjust to match letter 'H' */
+    }
+    
+    .button3 {
+      position: absolute;
+      right: 15%; /* Adjust to match letter 'L' */
+    }
+  }
+}

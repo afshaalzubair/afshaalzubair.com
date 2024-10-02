@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import SplineScene from './components/SplineScene'
 
@@ -8,30 +6,32 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <SplineScene>
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <SplineScene />
+      <div className="app">
+        <main>
+          <h1 className="intro1">
+            <b>Hello there.</b>
+          </h1>
+          <h1 className="intro2">
+            <b>My name is</b>
+          </h1>
+          <span className="sub-caption">
+            I'm a freshman studying computer science at UT Austin.
+          </span>
+          <button className="button1">
+            <span>Resume</span>
+          </button>
+          <button className="button2">
+            <span>LinkedIn</span>
+          </button>
+          <button className="button3">
+            <span>GitHub</span>
+          </button>
+        </main>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-    </SplineScene>
+    
   )
 }
 
