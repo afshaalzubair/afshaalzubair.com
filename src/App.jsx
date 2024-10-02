@@ -1,13 +1,10 @@
 import { useState } from 'react'
 import './App.css'
 import SplineScene from './components/SplineScene'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFileAlt } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import Button from './components/Button'; // Ensure correct import
+import { FaLinkedin, FaGithub, FaFileAlt } from 'react-icons/fa'; // Icons
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <SplineScene />
@@ -22,23 +19,30 @@ function App() {
           <span className="sub-caption">
             I'm a freshman studying computer science at UT Austin.
           </span>
-          <button className="button1">
-            <FontAwesomeIcon icon={faFileAlt} style={{ marginRight: '10px' }} />
-            <span>Resume</span>
-          </button>
-          <button className="button2">
-            <FontAwesomeIcon icon={faLinkedin} style={{ marginRight: '10px' }} />
-            <span>LinkedIn</span>
-          </button>
-          <button className="button3">
-            <FontAwesomeIcon icon={faGithub} style={{ marginRight: '10px' }} />
-            <span>GitHub</span>
-          </button>
+          <div className="button-container">
+            <Button
+              className="button1"
+              icon={<FaFileAlt />}
+              label="Resume"
+              link="https://google.com"
+            />
+            <Button
+              className="button2"
+              icon={<FaLinkedin />}
+              label="LinkedIn"
+              link="https://linkedin.com/in/afshaal-zubair"
+            />
+            <Button
+              className="button3"
+              icon={<FaGithub />}
+              label="GitHub"
+              link="https://github.com/afshaalzubair"
+            />
+          </div>
         </main>
       </div>
     </>
-    
   )
 }
 
-export default App
+export default App;
