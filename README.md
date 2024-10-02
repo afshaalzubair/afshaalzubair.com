@@ -1,2 +1,3 @@
 # afshaalzubair.com
-afshaalzubair.com is Afshaal Zubair's portfolio website.
+
+## Visit [here!](afshaalzubair.com)
