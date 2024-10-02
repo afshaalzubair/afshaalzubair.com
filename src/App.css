@@ -63,6 +63,7 @@
     button {
       padding: 15px 30px;
       border-radius: 10px;
+      margin-top: 575px;
       border: 1px solid #ffffff3f;
       cursor: pointer;
       pointer-events: auto;
@@ -82,17 +83,17 @@
 
     .button1 {
       position: absolute;
-      left: 15%; /* Adjust to match letter 'A' */
+      left: 30%; /* Adjust to match letter 'A' */
     }
     
     .button2 {
       position: absolute;
-      left: 45%; /* Adjust to match letter 'H' */
+      left: 47.5  %; /* Adjust to match letter 'H' */
     }
     
     .button3 {
       position: absolute;
-      right: 15%; /* Adjust to match letter 'L' */
+      right: 30%; /* Adjust to match letter 'L' */
     }
   }
 }
