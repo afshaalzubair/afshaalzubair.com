@@ -24,7 +24,7 @@ function App() {
               className="button1"
               icon={<FaFileAlt />}
               label="Resume"
-              link="https://google.com"
+              link="https://drive.google.com/drive/folders/1rxQDy5FutgG6TEKmA9RMMiy0FexpsZVz?usp=sharing"
             />
             <Button
               className="button2"
