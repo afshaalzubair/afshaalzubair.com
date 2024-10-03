@@ -1,3 +1,3 @@
 # afshaalzubair.com
 
-## Visit [here!](afshaalzubair.com)
+## Visit [here!](https://www.afshaalzubair.com)
