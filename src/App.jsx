@@ -10,12 +10,17 @@ function App() {
       <SplineScene />
       <div className="app">
         <main>
-          <h1 className="intro1">
-            <b>Hello there.</b>
-          </h1>
-          <h1 className="intro2">
-            <b>My name is</b>
-          </h1>
+          <div className="intro-text">
+            <h1 className="intro1">
+              Hello there.
+            </h1>
+            <h1 className="intro2">
+              My name is
+            </h1>
+          </div>
+          <div className="mobile-only">
+            Sorry, this website is not compatible with mobile, please view on PC for intended experience!
+          </div>
           <span className="sub-caption">
             I'm a freshman studying computer science at UT Austin.
           </span>

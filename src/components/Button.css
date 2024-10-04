@@ -16,6 +16,8 @@
     transition: transform 0.2s, background-color 0.3s;
     text-decoration: none;
     color: black;
+    width: fit-content;
+    justify-content: center;
   }
   
   .custom-button:hover {

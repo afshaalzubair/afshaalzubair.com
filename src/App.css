@@ -2,72 +2,119 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
 
-  main {
-    position: relative;
-    flex: 1;
-    padding: 120px 20px 20px;
+main {
+  position: relative;
+  flex: 1;
+  padding: 120px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  cursor: none;
+  pointer-events: none;
+
+  .sub-caption {
+    margin-top: 300px;
+    max-width: 80%;
+    text-align: center;
+    color: #da6ff2;
+    font-size: 18px;
+  }
+
+  .button-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 1rem;
+    width: 80vw;
+    max-width: 50rem;
+    justify-content: space-between;
     align-items: center;
-    gap: 15px;
-    cursor: none;
-    pointer-events: none;
+  }
+
+  .button1 {
+    background: linear-gradient(45deg, #da6ff2, #690580);
+  }
+
+  .button2 {
+    background: linear-gradient(45deg, #79cbf7, #0072b1);
+  }
+
+  .button3 {
+    background: linear-gradient(45deg, #999999, #000000);
+  }
+}
+
+.intro-text {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 90rem;
+  font-size: 3rem;
+}
+
+.intro1 {
+  margin-left: 4rem;
+  background: linear-gradient(45deg, #da6ff2, #690580);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.intro2 {
+  background: linear-gradient(45deg, #da6ff2, #690580);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.mobile-only {
+  text-align: center;
+  margin-top: 150px;
+  display: none;
+}
+
+@media (max-width: 1400px) {
+  .intro-text {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1030px) {
+  .intro-text {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    .button-container {
+      flex-direction: column;
+    }
+
+    .custom-button {
+      min-width: 15rem;
+    }
+  }
+
+  .intro-text {
+    flex-direction: column;
+    justify-items: center;
+
+    font-size: 2rem;
+    text-align: center;
 
     .intro1 {
-      position: absolute;
-      left: 15%;
-      top: 20%;
-      font-size: 90px;
-      text-align: left;
+      margin-left: 0;
+    }
+  }
 
-      b {
-        background: linear-gradient(45deg, #da6ff2, #690580);
-        color: transparent;
-        -webkit-background-clip: text;
-        background-clip: text;
-      }
-    }
-
-    .intro2 {
-      position: absolute;
-      right: 12%; 
-      top: 20%; 
-      font-size: 90px;
-      text-align: right;
-
-      b {
-        background: linear-gradient(45deg, #da6ff2, #690580);
-        color: transparent;
-        -webkit-background-clip: text;
-        background-clip: text;
-      }
-    }
-
-    .sub-caption {
-      margin-top: 512.5px;
-      max-width: 80%;
-      text-align: center;
-      color: #da6ff2;
-      font-size: 18px;
-    }
-
-    .button1 {
-      position: absolute;
-      left: 30%; 
-      background: linear-gradient(45deg, #da6ff2, #690580);
-    }
-    
-    .button2 {
-      position: absolute;
-      left: 47.5%;
-      background: linear-gradient(45deg, #79cbf7, #0072B1);
-    }
-    
-    .button3 {
-      position: absolute;
-      right: 27.5%; 
-      background: linear-gradient(45deg, #999999, #000000);
-    }
+  .mobile-only {
+    display: block;
   }
 }
