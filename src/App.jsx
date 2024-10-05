@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import SplineScene from './components/SplineScene'
-import Button from './components/Button'; // Ensure correct import
-import { FaLinkedin, FaGithub, FaFileAlt } from 'react-icons/fa'; // Icons
+import Button from './components/Button';
+import { FaLinkedin, FaGithub, FaFileAlt } from 'react-icons/fa';
 
 function App() {
   return (
