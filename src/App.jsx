@@ -7,7 +7,7 @@ import { FaLinkedin, FaGithub, FaFileAlt } from 'react-icons/fa';
 function App() {
   return (
     <>
-      <SplineScene />
+      <SplineScene /> 
       <div className="app">
         <main>
           <div className="intro-text">
