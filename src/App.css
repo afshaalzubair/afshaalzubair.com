@@ -101,11 +101,17 @@ main {
     .custom-button {
       min-width: 15rem;
     }
+
+    .sub-caption {
+      margin-top: 75px;
+    }
+
   }
 
   .intro-text {
     flex-direction: column;
     justify-items: center;
+    visibility: hidden;
 
     font-size: 2rem;
     text-align: center;
