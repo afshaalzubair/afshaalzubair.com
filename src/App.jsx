@@ -19,7 +19,7 @@ function App() {
             </h1>
           </div>
           <div className="mobile-only">
-            Sorry, this website is not compatible with mobile, please view on PC for intended experience!
+            It is highly recommended to view this page on PC for intended experience!
           </div>
           <span className="sub-caption">
             I'm a freshman studying computer science at UT Austin.

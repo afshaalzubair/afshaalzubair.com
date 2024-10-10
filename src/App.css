@@ -96,6 +96,7 @@ main {
   main {
     .button-container {
       flex-direction: column;
+      gap: 0rem;
     }
 
     .custom-button {
@@ -103,7 +104,7 @@ main {
     }
 
     .sub-caption {
-      margin-top: 75px;
+      margin-top: 25px;
     }
 
   }
@@ -123,5 +124,6 @@ main {
 
   .mobile-only {
     display: block;
+    margin-top: -25px;
   }
 }
